@@ -1,0 +1,109 @@
+.main {
+    background-image: url('/images/malino.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: var(--text-base);
+    margin: auto;
+
+    .container {
+        border-radius: .5em;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: var(--space-md);
+        margin: var(--space-sm);
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2xs);
+            
+            img {
+                height: 150px;             
+                width: 150px;
+                margin: 0 auto;
+            }
+            
+            label {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                input {
+                    background-color: var(--mid-white);
+                    border: none;
+                    border-radius: .25em;
+                    height: var(--space-md);
+                    padding: var(--space-xs);
+                    width: 100%;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid var(--mid-white);
+                border-radius: .25em;
+                width: 100px;
+                color: var(--mid-white);
+                padding: var(--space-2xs);
+                cursor: pointer;
+                margin: auto;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: var(--text-base--small);
+            padding-top: var(--space-sm);
+
+            .link {
+                color: var(--white);
+                text-transform: uppercase;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        .container {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        .container {
+            width: 50%;
+            padding: var(--space-lg);
+        }
+    }
+}
+
+@media screen and (min-width: 1567px) {
+    .main {
+        .container {
+            width: 30%;
+            
+            form {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}

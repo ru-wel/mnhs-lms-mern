@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Neue Montreal Regular', sans-serif;
+  src: url('../public/fonts/NeueMontreal-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal Light', sans-serif;
+  src: url('../public/fonts/NeueMontreal-Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal Medium', sans-serif;
+  src: url('../public/fonts/NeueMontreal-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal Bold', sans-serif;
+  src: url('../public/fonts/NeueMontreal-Bold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --text-base--small: clamp(0.821rem, 0.3071rem + 0.4647vi, 0.8943rem);
+  --text-base: clamp(0.9rem, 0.9rem + 0.07vw, 1.05rem);
+  --text-base--large: clamp(1.1rem, 0.7071rem + 0.5143vi, 1.4rem);
+
+  --heading-6: clamp(1rem, 0.928rem + 0.36vw, 1.25rem);
+  --heading-5: clamp(1.1rem, 0.884rem + 0.45vw, 1.57rem);
+  --heading-4: clamp(1.25rem, 1.0359rem + 1.0707vi, 1.9995rem);
+  --heading-3: clamp(1.5625rem, 1.2474rem + 1.5755vi, 2.6653rem);
+  --heading-2: clamp(1.9531rem, 1.496rem + 2.2854vi, 3.5529rem);
+  --heading-1: clamp(2.4414rem, 1.7858rem + 3.278vi, 4.736rem);
+
+  --heading-display: clamp(2.6518rem, 1.88rem + 3.459vi, 7.3131rem);
+  --heading-expertise: clamp(3.1518rem, 1.88rem + 5.459vi, 9.3131rem);
+  --heading-number: clamp(1.6518rem, 2.034rem + 7.959vi, 8.3131rem);
+
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vi, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vi, 0.9375rem);
+  --space-sm: clamp(1.125rem, 1.0893rem + 0.1786vi, 1.25rem);
+  --space-md: clamp(1.6875rem, 1.6339rem + 0.2679vi, 1.875rem);
+  --space-lg: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vi, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vi, 5rem);
+  --space-3xl: clamp(5.75rem, 6.2571rem + 1.2023vi, 7.25rem);
+
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  --white: rgb(255 255 255 / var(--tw-text-opacity));
+  --black: rgb(0 0 0 / var(--tw-text-opacity));
+  --green: rgb(43 53 48 / var(--tw-text-opacity));
+  --gray: rgb(228 236 227 / var(--tw-text-opacity));
+  --mid-white: rgb(243 243 241 / var(--tw-text-opacity));
+
+  --dark-green: rgb(38 45 41 / var(--tw-text-opacity));
+  --slight-green: rgb(67 85 75 / var(--tw-text-opacity));
+  --light-green: rgb(220 239 216 / var(--tw-text-opacity));
+  --super-light-green: rgb(151 210 139 / var(--tw-text-opacity));
+}
+
+/* =================== RESET =================== */
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--mid-white);
+  /* background-color: var(--dark-green); */
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  overflow: clip;
+  overflow-clip-margin: content-box;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =================== SCROLL BAR =================== */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--second-black);
+}
+
+.dashboard {
+  background-color: var(--red);
+}
