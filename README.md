@@ -2,6 +2,8 @@
 
 <p>A web application that simplifies educational management with features like user registration, login, dashboards, and administrative controls.</p>
 
+You can view the site here: https://mnhs-lms.onrender.com/login
+
 # Tech Stacks
 - PostgreSQL
 - Express
